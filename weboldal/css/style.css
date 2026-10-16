@@ -1,8 +1,12 @@
 body{
+    background-color: #3b2418;
+    color: #f6e7d0;
+    font-size: 1.1rem;
 }
 
 nav{
     background-color: #2A170E;
+    border: 3px solid #d4a373;
 }
 
 .navbar-brand{
@@ -25,10 +29,15 @@ header{
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-image: url(../img/borito.jpg);
+    background-size: cover;
+    height: 50vh;
 }
 
 header h1{
     text-shadow: 2px 2px 6px black;
+    font-size: 4.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 header p{
@@ -46,6 +55,12 @@ main{
 section h2{
     padding-bottom: 5px;
     margin-bottom: 15px;
+    color: #D4A373;
+    border-bottom: 2px dashed #d4a373;
+}
+
+section img{
+    border: 3px solid #d4a373;
 }
 
 h3{
@@ -60,19 +75,30 @@ main a{
 hr{
     border-top: 2px solid #D4A373;
     opacity: 1;
+    width: 60%;
+    text-align: center;
+    margin: 30px auto 30px auto;
 }
 
 table{
     border-collapse: collapse;
+    width: 50%;
+    margin: 0 auto;
 }
 
 th, td{
     text-align: center;
+    border: 1px solid #d4a373;
+    padding: 8px;
 }
 
 th{
     background-color: #D4A373;
     color: #3B2418;
+}
+
+tbody tr:nth-child(even){
+    background-color: #5a3825;
 }
 
 footer{
@@ -88,5 +114,13 @@ footer a{
 @media screen and (max-width: 576px){
     header p{
         font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 768px){
+    header h1{
+        font-size: 2.5rem;
+    }
+    table{
+        width: 100%;
     }
 }
